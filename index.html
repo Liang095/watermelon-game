@@ -3,11 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>合成大西瓜</title>
     <link rel="stylesheet" href="style.css">
-    <title>Watermelon Game</title>
 </head>
 <body>
-    <h1>Welcome to the Watermelon Game!</h1>
+    <h1>合成大西瓜</h1>
+    <div id="score-container">Score: <span id="score">0</span></div>
+    <div id="best-score-container">Best Score: <span id="best-score">0</span></div>
+    <div id="last-score-container">Last Score: <span id="last-score">0</span></div>
+    <div class="main-container">
+        <div id="game-container"></div>
+        <div id="next-fruit-container">
+            <p>Next:</p>
+            <div id="next-fruit-preview"></div>
+        </div>
+        <button id="end-game-button">结束游戏</button>
+        <button id="start-game-button">开始游戏</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.17.1/matter.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
